@@ -597,19 +597,38 @@ form .toClose:hover {
 @media (max-width: 768px) {
     nav {
         flex-direction: row;
-        align-items: center;
         padding: 5px;
+        justify-content: space-between;
     }
 
     nav div {
+        display: flex;
         flex-direction: row;
         gap: 10px;
         align-items: center;
+        justify-content: center;
+
+    }
+
+    nav img {
+        width: 40%;
+    }
+
+    nav div button {
+        font-size: 10px;
+        padding: 5px;
+        
+    }
+
+  
+
+    header .range {
+        width: 100%;
     }
 
     header .range h3 {
         margin: 0 auto;
-        font-size: 12px;
+        font-size: 10px;
     }
 
     main {
