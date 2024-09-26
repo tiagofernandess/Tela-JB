@@ -620,8 +620,6 @@ form .toClose:hover {
         
     }
 
-  
-
     header .range {
         width: 100%;
     }
@@ -690,13 +688,13 @@ form .toClose:hover {
         align-items: center;
     }
 
-    .form-to-enter,
+    /*.form-to-enter,
     .form-register,
     .form-forgot-password {
         width: 90%;
         left: 50%;
         transform: translateX(-50%);
-    }
+    }*/
 
     nav button {
         width: 100%;
