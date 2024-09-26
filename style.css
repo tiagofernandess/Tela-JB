@@ -112,7 +112,7 @@ main .container-main {
 }
 
 .side-menu a:hover {
-    color: var(--corLetras);
+    color: var(--corDestaque);
 }
 
 
@@ -626,7 +626,8 @@ form .toClose:hover {
 
     header .range h3 {
         margin: 0 auto;
-        font-size: 10px;
+        font-size: 11px;
+        padding: 2px;
     }
 
     main {
