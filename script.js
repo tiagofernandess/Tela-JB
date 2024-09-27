@@ -41,3 +41,4 @@ function closeForgotPassword() {
     mask.style.visibility = "hidden"
 
 }
+
