@@ -7,7 +7,6 @@
 }
 
 
-
 * {
     margin: 0;
     padding: 0;
@@ -126,17 +125,15 @@ main .container-main {
     display: flex;
     gap: 20px;
     margin-top: 70px;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.item-welcome,
-.item-animalgame,
-.item-casino {
+.container-welcome img {
     width: 100%;
-    height: 230px;
-    background-color: var(--corLinhas);
-    border-radius: 5px;
-    background-color: var(--corFundo);
-    border: 1px solid var(--corDestaque);
+    max-width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
+    cursor: pointer;
 }
 
 
@@ -159,6 +156,7 @@ main .container-main {
 
 .img-benefits img {
     width: 400px;
+    
 }
 
 .txt-benefits,
@@ -205,6 +203,7 @@ main .container-main {
     background-color: var(--corDestaque);
     color: var(--corLetras);
     cursor: pointer;
+    
 }
 
 .button-play {
@@ -646,6 +645,7 @@ form .toClose:hover {
     .container-main {
         padding: 10px;
     }
+
 
     .item-welcome,
     .item-animalgame,
