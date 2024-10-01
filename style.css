@@ -388,6 +388,10 @@ main .container-main {
     color: var(--corDestaque);
 }
 
+form {
+    z-index: 1000;
+}
+
 .form-to-enter {
     width: 100%;
     max-width: 350px;
@@ -578,6 +582,7 @@ form .toClose:hover {
     height: 100vh;
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
     visibility: hidden;
+    z-index: 1;
 }
 
 
@@ -604,6 +609,7 @@ form .toClose:hover {
     opacity: 0;
     transform: translateX(-100%);
     transition: all 1s;
+    position: relative;
 }
 
 .show {

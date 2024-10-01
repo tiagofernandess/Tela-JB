@@ -4,6 +4,22 @@ const buttonCloseEnter = document.querySelector(".toClose");
 const formToRegister = document.querySelector(".form-register");
 const formForgotPassword = document.querySelector(".form-forgot-password")
 
+
+const myObserver = new IntersectionObserver( (entries) => {
+    entries.forEach( (entry) => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('show')
+        } else {
+            entry.target.classList.remove('show')
+        }
+    })
+})
+
+const elements = document.querySelectorAll(".hidden")
+
+elements.forEach( (element) => myObserver.observe(element))
+
+
 function toEnter() {
     formToEnter.style.left = "50%"
     formToEnter.style.transform = "translateX(-50%)"
@@ -42,16 +58,3 @@ function closeForgotPassword() {
 
 }
 
-const myObserver = new IntersectionObserver( (entries) => {
-    entries.forEach( (entry) => {
-        if(entry.isIntersecting){
-            entry.target.classList.add('show')
-        } else {
-            entry.target.classList.remove('show')
-        }
-    })
-})
-
-const elements = document.querySelectorAll(".hidden")
-
-elements.forEach( (element) => myObserver.observe(element))
