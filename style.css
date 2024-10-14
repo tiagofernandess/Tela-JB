@@ -1,5 +1,5 @@
 :root {
-    --corFundo: #003F1D;
+    --corFundo: #012030;
     --corDestaque: #FFCB05;
     --corLetras: #000;
     --corLetrasMenuLateral: #fff;
@@ -35,13 +35,28 @@ header .range h3 {
 header div nav {
     display: flex;
     justify-content: space-between;
-    padding: 20px 40px 20px 40px;
+    padding: 10px 40px 10px 40px;
     align-items: center;
     border-bottom: 1px solid var(--corLinhas);
 }
 
+
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+    padding: 2px;
+}    
+
+.menu-item .material-symbols-outlined {
+    margin-right: 6px; 
+    font-size: 20px;
+}
+
+
 nav img {
-    width: 150px;
+    width: 180px;
 }
 
 nav div {
@@ -121,7 +136,7 @@ main .container-main {
 }
 
 .background-Img {
-    background-image: url(assets/arte-rincipal.png);
+    background-image: url(assets/ARTE-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -291,7 +306,34 @@ main .container-main {
     flex-wrap: wrap;
 }
 
+table {
+    width: 430px;
+    border-radius: 10px;
+    padding: 10px;
+}
+table th {
+    font-size: 20px;
+    color: var(--corFundo);  
+    padding: 5px;
+    font-weight: bolder;
+    border-radius: 10px;
+}
 
+table td {
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--corFundo);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.color-one {
+    background-color: var(--corDestaque);
+}
+
+.color-two {
+    background-color: var(--corLetrasMenuLateral);
+}
 
 .img-price {
     width: 400px;
@@ -646,6 +688,10 @@ form .toClose:hover {
         
     }
 
+    table {
+        width: 100%;
+    }
+
     header .range {
         width: 100%;
     }
@@ -674,7 +720,7 @@ form .toClose:hover {
     }
 
     .background-Img {
-        background-image: url(assets/ARTE-2.png);
+        background-image: url(assets/ARTE-2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

@@ -4,7 +4,7 @@ const buttonCloseEnter = document.querySelector(".toClose");
 const formToRegister = document.querySelector(".form-register");
 const formForgotPassword = document.querySelector(".form-forgot-password")
 
-
+//Inicio Efeito Elementos Aparecem ao deslizar pelo site
 const myObserver = new IntersectionObserver( (entries) => {
     entries.forEach( (entry) => {
         if(entry.isIntersecting){
@@ -18,6 +18,7 @@ const myObserver = new IntersectionObserver( (entries) => {
 const elements = document.querySelectorAll(".hidden")
 
 elements.forEach( (element) => myObserver.observe(element))
+//Fim Efeito Elementos Aparecem ao deslizar pelo site
 
 
 function toEnter() {

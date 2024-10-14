@@ -10,7 +10,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <title>Tela Inicial</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
@@ -23,7 +24,7 @@
         </div>
         <div>
             <nav>
-                <img src="assets/NORDESTE LOTERIAS LOGO.png" alt="">
+                <img src="assets/logo Clube dos Bichos.png" alt="">
                 <div>
                     <button onclick="toEnter()" class="buttonToEnter">ENTRAR</button>
                     <button onclick="register()" class="buttonRegister">CADASTRAR</button>
@@ -34,21 +35,31 @@
     <main>
         <section class="side-menu hidden">
             <div class="menu">
-                <a href="javascript:toEnter()">🦁 Apostar</a>
-                <a href="#benefits">✅ Benefícios</a>
-                <a href="#play">❓ Como Jogar</a>
-                <a href="#price">🪙 Cotação</a>
-                <a href="#index.html">🎁 Bônus</a>
-                <a href="#formsOfPayment">💰 Pagamento</a>
+                <a href="javascript:toEnter()" class="menu-item">
+                    <span class="material-symbols-outlined">pets</span> Apostar
+                </a>
+                <a href="#benefits" class="menu-item">
+                    <span class="material-symbols-outlined">featured_seasonal_and_gifts</span> Benefícios
+                </a>
+                <a href="#play" class="menu-item">
+                    <span class="material-symbols-outlined">question_mark</span> Como Jogar
+                </a>
+                <a href="#price" class="menu-item">
+                    <span class="material-symbols-outlined">currency_exchange</span> Cotação
+                </a>
+                <a href="#formsOfPayment" class="menu-item">
+                    <span class="material-symbols-outlined">payments</span> Pagamento
+                </a>
+                
                 <p class="line"></p>
             </div>
         </section>
         <section class="container-main hidden">
             <div class="container-welcome">
                 <div class="background-Img"></div>
-                <img src="assets/ARTE-3.png" alt="">
-                <img src="assets/ARTE-4.png" alt="">
-                <img src="assets/ARTE-5.png" alt="">
+                <img src="assets/ARTE-3.jpg" alt="">
+                <img src="assets/ARTE-4.jpg" alt="">
+                <img src="assets/ARTE-5.jpg" alt="">
             </div>
 
             <div class="container-benefits hidden" id="benefits">
@@ -60,7 +71,8 @@
                     <div class="txt-benefits hidden">
                         <h4>Jogar no bicho online oferece a conveniência de fazer suas apostas no conforto da sua casa,
                             a
-                            qualquer hora e de qualquer lugar. Com a Bicho Mania, é ainda melhor! Descubra as vantagens
+                            qualquer hora e de qualquer lugar. Com a Clube dos Bichos, é ainda melhor! Descubra as
+                            vantagens
                             de
                             apostar no jogo do bicho online:</h4>
                         <p><img src="" alt=""><span>Segurança:</span> Nossa plataforma de jogo do bicho online oferece
@@ -133,10 +145,55 @@
                 <h2 class="hidden">Nossas Cotações</h2>
                 <div class="items-price">
                     <div class="img-price hidden">
-                        <img src="assets/TABELA-COTAÇÃO---1200X900.png" alt="">
+                        <table>
+                            <tr class="color-one">
+                                <th>MODALIDADES</th>
+                                <th>COTAÇÕES</th>
+                            </tr>
+                            <tr  class="color-two">
+                                <td>MILHAR</td>
+                                <td>R$ 5.000,00</td>
+                            </tr>
+                            <tr class="color-one">
+                                <td>CENTENA</td>
+                                <td>R$ 600,00</td>
+                            </tr>
+                            <tr  class="color-two">
+                                <td>GRUPO</td>
+                                <td>R$ 18,00</td>
+                            </tr>
+                            <tr class="color-one">
+                                <td>DUQUE DE GRUPO</td>
+                                <td>R$ 20,00</td>
+                            </tr>
+                            <tr  class="color-two">
+                                <td>DUQUE DE DEZENA</td>
+                                <td>R$ 200,00</td>
+                            </tr>
+                            <tr class="color-one">
+                                <td>QUADRA DE DUQUE</td>
+                                <td>R$ 1.000,00</td>
+                            </tr>
+                            <tr  class="color-two">
+                                <td>TERNO DE GRUPO</td>
+                                <td>R$ 150,00</td>
+                            </tr>
+                            <tr class="color-one">
+                                <td>TERNO DE DEZENA</td>
+                                <td>R$ 4.000,00</td>
+                            </tr>
+                            <tr  class="color-two">
+                                <td>PASSE IDA</td>
+                                <td>R$ 90,00</td>
+                            </tr>
+                            <tr class="color-one">
+                                <td>PASSE ISA X VOLTA</td>
+                                <td>R$ 45,00</td>
+                            </tr>
+                        </table>
                     </div>
                     <div class="txt-price hidden">
-                        <h4>Na Nordeste Loterias, oferecemos as melhores cotações do mercado, garantindo que você tenha
+                        <h4>No Clube dos Bichos, oferecemos as melhores cotações do mercado, garantindo que você tenha
                             acesso às odds mais competitivas para suas apostas. Nossas cotações são cuidadosamente
                             elaboradas para maximizar suas chances de ganhar.</h4>
                         <h5>Por que escolher nossas cotações?</h5>
@@ -155,7 +212,7 @@
 
             <div class="container-formsOfPayment hidden" id="formsOfPayment">
                 <h2>Formas de pagamento</h2>
-                <p>Na Nordeste Loterias, garantimos a máxima segurança dos seus dados e um compromisso sólido com a
+                <p>No Clube dos Bichos, garantimos a máxima segurança dos seus dados e um compromisso sólido com a
                     integridade dos jogos do bicho online. Nossa prioridade é oferecer qualidade, segurança e agilidade
                     em todas as operações. <br><br>
 
@@ -179,15 +236,15 @@
                     <a href="">Política de Privacidade</a>
                     <a href="">Termos de uso</a>
                 </div>
-                <p>A Nordeste Loterias permite apenas clientes com mais de 18 anos de idade. Jogue com responsabilidade.
+                <p>O Clube dos Bichos permite apenas clientes com mais de 18 anos de idade. Jogue com responsabilidade.
                 </p>
-                <p>Nordeste Loterias - Todos os direitos reservados © 2024</p>
+                <p>Clube dos Bichos - Todos os direitos reservados © 2024</p>
             </div>
         </section>
     </main>
     <form class="form-to-enter" action="" method="post">
         <p onclick="closelogin()" class="toClose">X</p>
-        <img src="assets/NORDESTE LOTERIAS LOGO.png" alt="Logo">
+        <img src="assets/logo Clube dos Bichos.png" alt="Logo">
         <h3>Entre na sua conta</h3>
 
         <input type="text" placeholder="Insira seu usuário" required>
@@ -208,7 +265,7 @@
 
     <form class="form-register" method="post">
         <p onclick="closeRegistration()" class="toClose">X</p>
-        <img src="assets/NORDESTE LOTERIAS LOGO.png" alt="Logo">
+        <img src="assets/logo Clube dos Bichos.png" alt="Logo">
         <h3>Cadastre-se</h3>
 
         <input type="text" placeholder="Insira seu nome" required>
@@ -233,7 +290,7 @@
 
     <form class="form-forgot-password" method="post">
         <p onclick="closeForgotPassword()" class="toClose">X</p>
-        <img src="assets/NORDESTE LOTERIAS LOGO.png" alt="Logo">
+        <img src="assets/logo Clube dos Bichos.png" alt="Logo">
         <h3>Cadastrar Nova Senha</h3>
 
         <input type="text" placeholder="Insira seu Usuário" required>
